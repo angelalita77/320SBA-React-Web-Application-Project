@@ -1,17 +1,25 @@
 import { useState } from 'react'
 import { Routes, Route} from 'react-router-dom'
 import './App.css'
+
 // Import pages
-import Dashboard from './components/Dashboard'
-import LeaderBoard from './components/Leaderboard'
-import NotFound from './components/NotFound'
-import Game from  './components/Game'
+import Dashboard from './pages/Dashboard'
+import LeaderBoard from './pages/Leaderboard'
+import NotFound from './pages/NotFound'
+import Game from  './pages/Game'
+
+//Import Navbar
+import NavBar from './components/NavigationBar/NavBar'
+
+
+
 
 function App() {
 
 
   return (
     <>
+      <NavBar />
       <Routes>
         <Route path='/' element={ <Dashboard />} /> 
         <Route path="/game" element={ <Game />}/>
