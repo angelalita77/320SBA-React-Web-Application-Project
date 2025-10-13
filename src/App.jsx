@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route} from 'react-router-dom'
 import './App.css'
 
@@ -15,10 +15,15 @@ import NavBar from './components/NavigationBar/NavBar'
 
 
 function App() {
+ 
+  
 
+  
 
   return (
     <>
+    
+    <main className='App'>
       <NavBar />
       <Routes>
         <Route path='/' element={ <Dashboard />} /> 
@@ -26,6 +31,8 @@ function App() {
         <Route path="/leaderboard" element={ <LeaderBoard />}/>
         <Route path="*" element={ <NotFound />}/>
       </Routes> 
+      
+      </main>
     </>
   )
 }

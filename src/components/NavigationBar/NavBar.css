@@ -1,14 +1,13 @@
 .header {
-position: fixed;
+/* position: fixed; */
 top: 0;
 left: 0;
 width: 100%;
 padding: 10px 5%;
-background: seagreen;
+background: transparent;
 display: flex;
 justify-content: space-between;
 align-items: center;
-z-index:100;
 }
 
 .logo {

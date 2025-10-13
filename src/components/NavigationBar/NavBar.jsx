@@ -8,9 +8,9 @@ export default function NavBar() {
 
             <a href ="/" className="logo">Matching Game</a>
             <nav className="navbar">
-                <a href="/">Home</a>
-                <a href="/game">Game</a>
-                <a href="/leaderboard">Leader Board</a>
+                <Link to="/">Home</Link>
+                <Link to="/game">Game</Link>
+                <Link to="/leaderboard">Leader Board</Link>
                 {/* <a href="/notfound">Not Found</a> */}
             </nav>
         </header>
