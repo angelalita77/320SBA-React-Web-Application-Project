@@ -3,3 +3,15 @@
   padding: 0;
 }
 
+.gameContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: space-between;
+  align-content: center;
+  border: solid ;
+}
+
+img {
+  border: white solid 2px;
+}

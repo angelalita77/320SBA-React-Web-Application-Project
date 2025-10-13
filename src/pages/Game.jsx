@@ -1,30 +1,32 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import apiService from '../utilities/apiService.mjs'
+import Character from '../components/Character';
 
 
 export default function Game() {
     const [rickMortyData, setRickMortyData] = useState(null);
 
-    const apiStr = 'https://rickandmortyapi.com/api'
-
-    async function getRickMortyData(apiStr) {
-        // get request of API
-        try {
-            let res = await axios.get(apiStr);
-
-            setRickMortyData(res);
-            console.log(res.data);
-
-        } catch (err) {
-            console.error(err.message)
-        }
-
-    }
+    const apiStr = 'https://rickandmortyapi.com/api/character/'
+   
 
     useEffect( ()=> {
-        getRickMortyData(apiStr)
+        async function getAgain() {
+            let res = await apiService.getRickMortyData(apiStr);
+            setRickMortyData(res);
+           
+
+        }
+        getAgain();
     }, []);
 
+    let loading = () => {
+        return <h1>Loading Game...</h1>
+    }
 
-    return <h1>Game</h1>
+    let loaded = () => rickMortyData.map( (char, i) =>{
+        return <Character key={i}{...char}/>
+    })
+    
+
+    return rickMortyData ? <div className='gameContainer'>{loaded()}</div> : loading();
 }
