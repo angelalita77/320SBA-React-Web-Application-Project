@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 //import "../App.css"
 import "../styles/Game.css"
 
+//URL of the Rick and Morty
 const url = "https://rickandmortyapi.com/api/character/avatar/";
 
 const Game = () => {
@@ -40,7 +41,8 @@ const Game = () => {
 
   return (
     <div>
-      <div className="centered-page-content"><h1>Begin The Match</h1>
+      <div className="centered-page-content">
+        <h1>Begin The Match</h1>
       <p>To reset the game, refresh the page.</p></div>
       <div className="game-container">
 

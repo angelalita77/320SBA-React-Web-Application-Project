@@ -43,7 +43,7 @@ export default function Gallery() {
 
   return rickMortyData ? (<div className="gallery-container">
         <h1>Gallery</h1>
-        <p>Here is a gallery of characters that will be part of
+        <p className="paragraphs-only">Here is a gallery of characters that will be part of
           future developments of the game. 
         </p>
         {/* CRITICAL: Use the .cards class to create the grid layout */}
