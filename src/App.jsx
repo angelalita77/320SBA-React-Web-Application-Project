@@ -20,8 +20,7 @@ function App() {
   return (
     <>
       <NavBar />
-    <div className='App'>
-    
+    <div>
       <Routes>
         <Route path='/' element={ <Dashboard />} /> 
         <Route path="/game" element={ <Game />}/>

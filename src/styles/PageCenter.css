@@ -1,0 +1,10 @@
+.centered-page-content {
+    /* Set a max-width to prevent content from spanning the entire screen on large monitors */
+    max-width: 1000px; 
+    
+    /* CRITICAL: Centers the block-level container horizontally */
+    margin: 40px auto; 
+    
+    text-align: center;
+}
+
