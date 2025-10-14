@@ -23,9 +23,29 @@ Have one or more complex user interface modules such as a carousel, drag and dro
 Look into localstorage so you can save data to the user's browser.
 
 ## Software: Rick and Morty Match Game and Gallery
-### About
-This is a Rick and Morty Wesbite with the following features
+## About
+This project is a Single Page Application (SPA) built using React to create a memory matching game, complete with a character gallery and structured navigation bar. It demonstrates core React concepts for state management, component uses, and API calls.
 - Match Game
 - Character Gallery
 
+## Match Game
+The match game is a simple 8-card match game in which the cards flip to reveal the picture of a Rick and Morty character underneath.
+Unsolved Problem: 
+- Getting the cards to shuffle upon refresh.
+- Data pull from API GET Method rather than from the URL
+
+
+## Gallery
+Gallery (Gallery.jsx): Manages the state for the fetched data (rickMortyData), which holds the array of characters retrieved from the Rick and Morty API.
+
+
+
+### Page Routes: 
+| URL Path | Component | Rendered Purpose |
+|----------|-----------|------------------|
+| `/` | Home.jsx | The main landing page or homepage. |
+| `/game` | Game.jsx | Contains the Memory Matching Game logic and interface. |
+| `/gallery` | Gallery.jsx | Displays the fetched Rick and Morty characters in a grid layout using the Axios API call. |
+| `/leaderboard` | LeaderBoard.jsx | The intended page for scores and rankings, but instead there is a clever satire of the show |
+| `*` | NotFound.jsx | Renders when the user navigates to any undefined path, catching broken links. |
 
