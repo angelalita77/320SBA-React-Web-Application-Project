@@ -21,3 +21,11 @@ The following are not required:
 
 Have one or more complex user interface modules such as a carousel, drag and drop, a sticky nav, tooltips, etc.
 Look into localstorage so you can save data to the user's browser.
+
+## Software: Rick and Morty Match Game and Gallery
+### About
+This is a Rick and Morty Wesbite with the following features
+- Match Game
+- Character Gallery
+
+

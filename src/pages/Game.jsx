@@ -8,6 +8,7 @@ const Game = () => {
   const [openedCard, setOpenedCard] = useState([]);
   const [matched, setMatched] = useState([]);
 
+
   const characters = [
     { id: 1, name: "rick" },
     { id: 2, name: "morty" },
@@ -15,6 +16,7 @@ const Game = () => {
     { id: 4, name: "beth" }
   ];
 
+  
   //currently there are 4 chars but we need the pair
   const pairofCharacters = [...characters, ...characters];
 
