@@ -16,14 +16,10 @@ import NavBar from './components/NavigationBar/NavBar'
 
 function App() {
  
-  
-
-  
-
   return (
     <>
     
-    <main className='App'>
+    <div className='App'>
       <NavBar />
       <Routes>
         <Route path='/' element={ <Dashboard />} /> 
@@ -32,7 +28,7 @@ function App() {
         <Route path="*" element={ <NotFound />}/>
       </Routes> 
       
-      </main>
+      </div>
     </>
   )
 }
