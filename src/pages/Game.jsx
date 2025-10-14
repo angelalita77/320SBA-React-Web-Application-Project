@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../App.css"
+import "../styles/Game.css"
 
 const url = "https://rickandmortyapi.com/api/character/avatar/";
 
@@ -36,7 +37,7 @@ const Game = () => {
     }, [openedCard]);
   
     return (
-      <div className="App">
+      <div className="game-container">
         <div className="cards">
             {/* For each object in the array... */}
           {pairofCharacters.map((char, index) => {

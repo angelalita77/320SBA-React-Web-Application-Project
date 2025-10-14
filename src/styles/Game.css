@@ -1,0 +1,13 @@
+.game-container {
+    /* Set a maximum width so the game doesn't stretch too wide on large monitors */
+    max-width: 900px; 
+    
+    /* Center the container horizontally on the page */
+    margin: 40px auto; 
+    
+    /* Add padding/styling specific to the game area */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center; /* Center internal text/elements if necessary */
+}

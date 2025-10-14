@@ -2,11 +2,11 @@
 /* position: fixed; */
 top: 0;
 left: 0;
-width: 100%;
+width: 100%; /* Ensures it spans the full width of the browser */
 padding: 10px 5%;
 background: transparent;
 display: flex;
-justify-content: space-between;
+justify-content: space-between; /* Spreads the logo and navbar */
 align-items: center;
 }
 

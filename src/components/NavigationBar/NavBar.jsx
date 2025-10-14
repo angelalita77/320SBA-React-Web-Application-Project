@@ -6,7 +6,7 @@ export default function NavBar() {
     return (
         <header className="header">
 
-            <a href ="/" className="logo">Matching Game</a>
+            <Link to ="/" className="logo">Matching Game</Link>
             <nav className="navbar">
                 <Link to="/">Home</Link>
                 <Link to="/game">Game</Link>
