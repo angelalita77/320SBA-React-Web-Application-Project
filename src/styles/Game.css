@@ -12,6 +12,20 @@
     text-align: center; /* Center internal text/elements if necessary */
 }
 
+.gallery-container {
+    /* Set a maximum width so the game doesn't stretch too wide on large monitors */
+    max-width: 530px; 
+    max-height: 100%;
+    
+    /* Center the container horizontally on the page */
+    margin: 60px auto; 
+    
+    /* Add padding/styling specific to the game area */
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center; /* Center internal text/elements if necessary */
+}
 
 * {
   box-sizing: border-box;
@@ -57,7 +71,7 @@ p strong {
 .cards {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-  gap: 10px;
+  gap: 15px;
 }
 
 .rickmorty-card {
@@ -66,6 +80,25 @@ p strong {
   border-radius: 2px;
   background: #000;
   cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* This is for the gallery design */
+.gallery-cards {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* This is for the individual gallery images */
+.character-card {
+  height: 150px;
+  width: 150px;
+  border-radius: 2px;
+  background: #000;
+  /* cursor: pointer; */
   background: none;
   border: none;
   outline: none;

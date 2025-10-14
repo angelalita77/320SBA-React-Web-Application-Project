@@ -1,7 +1,7 @@
 export default function Character({image, name}){
     
     return (
-        <div className="rickmorty-card">
+        <div className="character-card">
             <img 
                 src={image} 
                 alt={name} 

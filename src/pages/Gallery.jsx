@@ -41,10 +41,13 @@ export default function Gallery() {
     return <Character key={index} {...char} />;
   });
 
-  return rickMortyData ? (<div className="game-container">
+  return rickMortyData ? (<div className="gallery-container">
         <h1>Gallery</h1>
+        <p>Here is a gallery of characters that will be part of
+          future developments of the game. 
+        </p>
         {/* CRITICAL: Use the .cards class to create the grid layout */}
-        <div className="cards">
+        <div className="gallery-cards">
             {loaded()} 
         </div>
     </div>
