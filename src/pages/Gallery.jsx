@@ -1,41 +1,45 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios'
+import Character from '../components/Character';
 
 export default function Gallery() {
   const [rickMortyData, setRickMortyData] = useState(null);
+ 
 
   // get request of API
   let apiStr = 'https://rickandmortyapi.com/api/character/'
 
 
-  async function getRickMortyData(apiStr) {
+  
+
+  useEffect(() => {
+    async function getRickMortyData() {
     try {
 
       let res = await axios.get(apiStr);
 
-      let rickMortyData = res.data;
+      let rickMortyData = res.data.results;
 
+      
+      setRickMortyData(rickMortyData);
       console.log(rickMortyData)
-      return rickMortyData;
 
     } catch (err) {
       console.error(err.message);
     }
   }
-
-  useEffect(() => {
-    async function getAgain() {
-
-      let res = await getRickMortyData(apiStr)
-      setRickMortyData(res);
-    }
-
-    getAgain()
-
+  getRickMortyData();
   }, []);
 
+  let loading = () => {
+    return <h1>Loading Game...</h1>
+  }
 
-  return (
-    <div>Gallery</div>
-  )
+  let loaded = () => rickMortyData.map((char, index) => {
+    return <Character key={index} {...char} />;
+  });
+
+  return rickMortyData ? loaded() : loading();
+
+
 }

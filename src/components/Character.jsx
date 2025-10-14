@@ -1,4 +1,4 @@
-export default function Character({name, image}){
+export default function Character({image, name}){
     
     return (
         <div>
