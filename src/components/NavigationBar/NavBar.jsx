@@ -10,6 +10,7 @@ export default function NavBar() {
             <nav className="navbar">
                 <Link to="/">Home</Link>
                 <Link to="/game">Game</Link>
+                <Link to="/gallery">Gallery</Link>
                 <Link to="/leaderboard">Leader Board</Link>
                 {/* <a href="/notfound">Not Found</a> */}
             </nav>
