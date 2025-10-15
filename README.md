@@ -6,6 +6,7 @@
 This project is a Single Page Application (SPA) built using React to create a memory matching game, complete with a character gallery and structured navigation bar. It demonstrates core React concepts for state management, component uses, and API calls.
 - Match Game
 - Character Gallery
+The website link is now avialable through Netlify: https://rickmorty-gamegallery.netlify.app/
 
 ## Match Game
 The match game is a simple 8-card match game in which the cards flip to reveal the picture of a Rick and Morty character underneath.
