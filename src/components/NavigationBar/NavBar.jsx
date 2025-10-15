@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './navbar.css'
+import './NavBar.css'
 
 export default function NavBar() {
 
@@ -12,7 +12,6 @@ export default function NavBar() {
                 <Link to="/game">Game</Link>
                 <Link to="/gallery">Gallery</Link>
                 <Link to="/leaderboard">Leader Board</Link>
-                {/* <a href="/notfound">Not Found</a> */}
             </nav>
         </header>
 
