@@ -20,7 +20,7 @@ const Game = () => {
 
   
   //currently there are 4 chars but we need the pair
-  const pairofCharacters = [...characters, ...characters];
+  const pairofCharacters = [...characters, ...characters]
 
   function flipCard(index) {
     setOpenedCard((opened) => [...opened, index]);

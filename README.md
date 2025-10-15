@@ -79,4 +79,8 @@ https://rickandmortyapi.com/
 Flip Card CSS Trick
 https://www.w3schools.com/howto/howto_css_flip_card.asp
 
+React for Beginners - Let's build a memory game!
+https://www.youtube.com/watch?v=c16KLlM3ZNw
 
+Build Memory Game with React Hooks
+https://youtu.be/Txm71YeFY8g?si=_M-iGtaBvALTO7E8
