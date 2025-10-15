@@ -17,6 +17,8 @@ Unsolved Problem:
 ## Gallery
 Gallery (Gallery.jsx): Manages the state for the fetched data (rickMortyData), which holds the array of characters retrieved from the Rick and Morty API.
 
+## Sticky Bar Feature
+Used CSS stylings to create a sticky bar
 
 ### API Source
 REST
