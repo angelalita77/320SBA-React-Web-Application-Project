@@ -16,6 +16,12 @@ align-items: center;
     font-weight: 700;
 }
 
+/* Make the navigation bar sticky */
+.header {
+    position: sticky;
+    top: 0;
+}
+
 .navbar a {
     position: relative;
     font-size: 18px;
@@ -34,6 +40,8 @@ align-items: center;
     transition: .3s;
 }
 
+/* The line under the link will stretch 
+to the length of the link button */
 .navbar a:hover::before{
     width: 100%;
 }

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios'
 import Character from '../components/Character';
 import '../styles/Game.css';
+import '../styles/Gallery.css';
 
 
 export default function Gallery() {
@@ -43,7 +44,7 @@ export default function Gallery() {
 
   return rickMortyData ? (<div className="gallery-container">
         <h1>Gallery</h1>
-        <p className="paragraphs-only">Here is a gallery of characters that will be part of
+        <p className="paragraph-gallery">Here is a gallery of characters that will be part of
           future developments of the game. 
         </p>
         {/* CRITICAL: Use the .cards class to create the grid layout */}

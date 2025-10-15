@@ -1,1 +1,12 @@
+h1 {
+    font-size: 40px;
+}
 
+h2{
+    font-size: 30px;
+    padding: 10px;
+}
+p {
+  margin: 20px 90px;
+  font-size: 18px;
+}

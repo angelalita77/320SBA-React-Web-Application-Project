@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 //import "../App.css"
 import "../styles/Game.css"
+import "../styles/PageCenter.css";
 
 //URL of the Rick and Morty
 const url = "https://rickandmortyapi.com/api/character/avatar/";
