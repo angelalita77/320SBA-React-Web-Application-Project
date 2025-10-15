@@ -2,7 +2,7 @@ h1 {
   margin: 10px;
 }
 
-.paragraph-gallery {
+.paragraph-gallery  {
   margin: 20px 50px;
   font-size: 18px;
 }
@@ -11,7 +11,7 @@ h1 {
 .gallery-cards {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-  gap: 30px;
+  gap: 50px;
 }
 
 /* This is for the individual gallery images */
@@ -36,7 +36,9 @@ h1 {
     
     /* Add padding/styling specific to the game area */
     padding: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center; /* Center internal text/elements if necessary */
+}
+
+.gallery-paragraph {
+    color: rgb(227, 227, 227)
 }

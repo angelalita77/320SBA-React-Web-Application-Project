@@ -7,7 +7,7 @@ export default function Dashboard(){
     
             <h2>About</h2>
 
-            <p className="paragraphs-dashboard">“Wubba lubba dub dub! You’ve stumbled into my 
+            <p className="paragraph">“Wubba lubba dub dub! You’ve stumbled into my 
                 digital lab of chaos and questionable brilliance. 
                 There’s science, sarcasm, and probably a few timelines 
                 that shouldn’t exist. Stay sharp, stay hydrated, and 

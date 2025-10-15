@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 import Character from '../components/Character';
-import '../styles/Game.css';
 import '../styles/Gallery.css';
 
 
@@ -47,7 +46,7 @@ export default function Gallery() {
         <p className="paragraph-gallery">Here is a gallery of characters that will be part of
           future developments of the game. 
         </p>
-        {/* CRITICAL: Use the .cards class to create the grid layout */}
+        {/* CRITICAL: Use the .gallery-cards class to create the grid layout */}
         <div className="gallery-cards">
             {loaded()} 
         </div>

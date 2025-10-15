@@ -7,7 +7,7 @@ export default function Character({image, name}){
                 alt={name} 
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             /> 
-            <p>{name}</p>
+            <p className="gallery-paragraph">{name}</p>
         </div>
         
         
