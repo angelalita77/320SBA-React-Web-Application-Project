@@ -13,11 +13,13 @@ The website link is now avialable through Netlify: https://rickmorty-gamegallery
 The match game is a simple 8-card match game in which the cards flip to reveal the picture of a Rick and Morty character underneath.
 Unsolved Problem: 
 - Getting the cards to shuffle upon refresh.
-- Data pull from API GET Method rather than from the URL
+- Data pull from API GET Method rather than from the API URL for the match game
+- Getting Netlify to display the NotFound.jsx routed page for 404 Page Not Found catch
 
 
 ## Gallery
-Gallery (Gallery.jsx): Manages the state for the fetched data (rickMortyData), which holds the array of characters retrieved from the Rick and Morty API.
+Gallery (Gallery.jsx): Manages the state for the API fetched data (rickMortyData), which holds the array of characters retrieved from the Rick and Morty API.
+This shows other characters pulled from the Rick and Morty API (hopefully for future game development)
 
 ## Sticky Bar Feature
 Used CSS stylings to create a sticky bar
@@ -41,8 +43,8 @@ Each character image is found under a <number.jpg> format. This is how the pictu
 ### Technologies Used from React
 | Hook | Components Used In | Purpose |
 |------|-------------------|---------|
-| `useState` | Game.jsx, Gallery.jsx | Manages all mutable data that changes the UI. This includes tracking the currently flipped cards (`openedCard`), matched pairs (`matched`), and the fetched API data (`rickMortyData`). |
-| `useEffect` | Game.jsx, Gallery.jsx | Handles side effects and lifecycle events. It's used for asynchronous data fetching (in `Gallery.jsx` on component mount) and for implementing the game logic (checking for matches and resetting cards after a delay in `Game.jsx`). |
+| `useState, useEffect` | Game.jsx, Gallery.jsx | Manages all mutable data that changes the UI. This includes tracking the currently flipped cards (`openedCard`), matched pairs (`matched`), and the fetched API data (`rickMortyData`) for the pictures in `Gallery.jsx` on component mount. |
+
 
 ### Outside Imported React Technologies
 | Library | Components Used In | Function |
