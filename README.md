@@ -7,14 +7,14 @@ This project is a Single Page Application (SPA) built using React to create a me
 - Match Game
 - Character Gallery
 The website link is now avialable through Netlify: https://rickmorty-gamegallery.netlify.app/
-`The 404 Not Found does NOT WORK in the Netlify link - but it works when running from the local files`
+
 
 ## Match Game
 The match game is a simple 8-card match game in which the cards flip to reveal the picture of a Rick and Morty character underneath.
 Unsolved Problem: 
 - Getting the cards to shuffle upon refresh.
 - Data pull from API GET Method rather than from the API URL for the match game
-- Getting Netlify to display the NotFound.jsx routed page for 404 Page Not Found catch
+- Getting Netlify to display the NotFound.jsx routed page for 404 Page Not Found catch `*RESOLVED*`
 
 
 ## Gallery
